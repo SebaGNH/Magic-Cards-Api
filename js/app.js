@@ -1,9 +1,8 @@
 'use strict'
 
 const cargarApi = async () => {
-
     try{
-        const respuesta = await fetch(`https://api.magicthegathering.io/v1/types`);
+        const respuesta = await fetch(`https://api.magicthegathering.io/v1/cards`);
         //console.log(respuesta); /* clg <-- Verificar conección ok */
 
         const datos = await respuesta.json();
